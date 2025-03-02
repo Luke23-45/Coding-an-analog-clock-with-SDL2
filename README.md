@@ -10,27 +10,25 @@ Ensure you have the following installed:
 - [SDL2](https://www.libsdl.org/)
 - [SDL2_ttf](https://www.libsdl.org/projects/SDL_ttf/)
 
-
 ## Project Structure
 
-* `colorfull_ball.cc`: Main C++ source file containing the clock application logic.
+* `clock.cc`: Main C++ source file containing the clock application logic.
 * `Makefile`:  Build configuration file for compiling the project.
 * `src/`: Source code directory (intended for better organization).
-    * `include/`:  Directory for header files (currently not used in this single-file project, but would be used in larger projects to store header files).
-    * `lib/`: Directory intended for external libraries or related files (SDL libraries are expected to be installed system-wide, not included directly in `lib` in this basic project structure).
+    * `include/`:  Directory for header files 
 
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone git@github.com:Luke23-45/Colorfull-Ball-with-Particle-Effect-Animation.git
+    git clone git@github.com:Luke23-45/Coding-an-analog-clock-with-SDL2.git
     ```
 ## Building
 
 This project uses `make` for building. To build the project, run the following command in your terminal:
 
-2. Navigate to the project directory:
+1. Navigate to the project directory:
     ```bash
-    cd Colorfull-Ball-with-Particle-Effect-Animation
+    cd Coding-an-analog-clock-with-SDL2
     ```
 3. Compile the code:
     ```bash
@@ -38,7 +36,7 @@ This project uses `make` for building. To build the project, run the following c
     ```
 4. Run the executable (Linux/macOS):
     ```bash
-    ./Colorfull-Ball-with-Particle-Effect-Animation
+    ./main
 
     ```
 5. Run the executable (Windows):
@@ -72,7 +70,7 @@ This project uses `make` for building. To build the project, run the following c
 
 
 ## Code Structure
-- **`colorfull_ball.cc`**: This is the primary source file and contains all the C++ code for the clock application. It includes:
+- **`clock.cc`**: This is the primary source file and contains all the C++ code for the clock application. It includes:
     - **SDL Initialization and Setup**:  Handles the initialization of SDL2, window creation, and renderer setup.
     - **Rendering Functions**:  Functions for drawing different elements of the clock, including:
         - Background gradients and particles (`drawGradientBackground`, `drawParticles`).
@@ -87,7 +85,7 @@ This project uses `make` for building. To build the project, run the following c
     - **Compiler Flags**: Specifies flags for the g++ compiler, including optimization and warning levels.
     - **Linking Instructions**:  Links the necessary SDL2 and SDL2_ttf libraries to create the executable.
     - **Build and Clean Targets**: Defines targets for compiling the code (`make`) and cleaning up compiled files (`make clean`).
-- **`src/include/` and `src/lib/`**: These directories are placeholders for a more structured project. In a larger project, `include/` would contain header files for source code modularization, and `lib/` could contain local copies or specific configurations for libraries. In this single-file project, they are not actively used for code organization but are part of a typical project structure.
+
 
 ## Demo Video
 Check out the project demo video on YouTube: https://www.youtube.com/watch?v=McOcbGHyAWA
